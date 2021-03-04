@@ -22,8 +22,13 @@ class CursoTest {
 
 	@Test
 	void testAniadirAlumno() {
-		fail("Not yet implemented");
+		Integer Numerodealumnosantes = c1.numeroAlumnos();
+		c1.aniadirAlumno(p1);
+
+		assertEquals(Numerodealumnosantes.intValue() + 1, c1.numeroAlumnos().intValue());
+		assertTrue(c1.estaRegistrado(p1.getDni()));
 	}
+	
 
 	@Test
 	void testEstaRegistrado() {
