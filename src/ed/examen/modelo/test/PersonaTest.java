@@ -24,7 +24,12 @@ class PersonaTest {
 
 	@Test
 	void testSetDni() {
-		fail("Not yet implemented");
+		try {
+			p1.setDni("12345678R");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		assertEquals("12345678R", p1.getDni());
 	}
 
 	@Test
