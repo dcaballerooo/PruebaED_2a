@@ -7,6 +7,8 @@ import org.junit.jupiter.api.Test;
 class CursoTest {
 	private Curso c1= new Curso();
 	private Persona p1 = new Persona("18185158R","Daniel","Caballero");
+	private Persona p2 = new Persona("16789654C","Rafael","Caballero");
+	
 
 	@Test
 	void testEliminarAlumno() throws Exception {
@@ -32,8 +34,14 @@ class CursoTest {
 
 	@Test
 	void testEstaRegistrado() {
-		fail("Not yet implemented");
+		
+		c1.aniadirAlumno(p1);
+
+		assertTrue(c1.estaRegistrado(p1.getDni()));
+		assertFalse(c1.estaRegistrado(p2.getDni()));
+
 	}
+
 
 	@Test
 	void testCurso() {
