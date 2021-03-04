@@ -50,9 +50,10 @@ class CursoTest {
 
 	}
 
+	@SuppressWarnings("deprecation")
 	@Test
 	void testNumeroAlumnos() {
-		fail("Not yet implemented");
+		assertEquals(c1.numeroAlumnos(), new Integer(0));
 	}
 
 }
