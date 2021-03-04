@@ -58,4 +58,10 @@ public class Curso {
 			System.out.println(persona);
 		}
 	}
+
+	public Object getlistaAlumnos() {
+		// TODO Auto-generated method stub
+		return listaAlumnos;
+	}
+
 }
