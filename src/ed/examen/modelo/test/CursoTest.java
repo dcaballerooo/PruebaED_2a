@@ -1,8 +1,11 @@
-package ed.examen.modelo;
+package ed.examen.modelo.test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
+
+import ed.examen.modelo.Curso;
+import ed.examen.modelo.Persona;
 
 class CursoTest {
 	private Curso c1= new Curso();
